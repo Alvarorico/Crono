@@ -1,0 +1,92 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
+| Date         : Fri Dec 22 10:14:33 2023
+| Host         : Alvaro running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file TOP_control_sets_placed.rpt
+| Design       : TOP
+| Device       : xc7a100t
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    14 |
+|    Minimum number of control sets                        |    14 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    63 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    14 |
+| >= 0 to < 4        |     4 |
+| >= 4 to < 6        |     6 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     1 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     1 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     2 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              22 |            9 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              51 |           21 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |              16 |            8 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-------------------------------------------+---------------------------+----------------------------------------------+------------------+----------------+--------------+
+|                Clock Signal               |       Enable Signal       |               Set/Reset Signal               | Slice Load Count | Bel Load Count | Bels / Slice |
++-------------------------------------------+---------------------------+----------------------------------------------+------------------+----------------+--------------+
+|  Dispalys1/Inst_clk10khz/clk_10khz        |                           | Dispalys1/refresh[7]_i_1_n_0                 |                1 |              1 |         1.00 |
+|  Dispalys1/Inst_clk10khz/clk_10khz        |                           | Dispalys1/FSM_sequential_flag_reg[1]_0[0]    |                1 |              1 |         1.00 |
+|  GestorEntradas1/DetectorFlanco2/STOP_aux |                           | GestorEntradas1/DetectorFlanco/sreg_reg[1]_0 |                1 |              1 |         1.00 |
+|  GestorEntradas1/DetectorFlanco3/ZERO_aux |                           | GestorEntradas1/DetectorFlanco/sreg_reg[2]_0 |                1 |              1 |         1.00 |
+|  Dispalys1/Inst_clk10khz/clk_10khz        |                           | Dispalys1/flag[2]                            |                3 |              4 |         1.33 |
+|  Dispalys1/Inst_clk10khz/clk_10khz        |                           | Dispalys1/FSM_sequential_flag_reg[1]_0[1]    |                2 |              4 |         2.00 |
+|  Crono1/Inst_clk1hz/CLK                   | Crono1/dec_sec0           | Crono1/Reset_i                               |                2 |              4 |         2.00 |
+|  Crono1/Inst_clk1hz/CLK                   | Crono1/Start_i            | Crono1/Reset_i                               |                2 |              4 |         2.00 |
+|  Crono1/Inst_clk1hz/CLK                   | Crono1/dec_min[3]_i_1_n_0 | Crono1/Reset_i                               |                2 |              4 |         2.00 |
+|  Crono1/Inst_clk1hz/CLK                   | Crono1/unit_min0          | Crono1/Reset_i                               |                2 |              4 |         2.00 |
+|  Dispalys1/Inst_clk10khz/clk_10khz        |                           |                                              |                2 |              8 |         4.00 |
+|  CLK_IBUF_BUFG                            |                           | Dispalys1/Inst_clk10khz/temporal             |                4 |             13 |         3.25 |
+|  CLK_IBUF_BUFG                            |                           |                                              |                7 |             17 |         2.43 |
+|  CLK_IBUF_BUFG                            |                           | Crono1/Inst_clk1hz/temporal                  |                8 |             26 |         3.25 |
++-------------------------------------------+---------------------------+----------------------------------------------+------------------+----------------+--------------+
+
+
