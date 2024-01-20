@@ -1,0 +1,18 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Tue Dec 26 18:39:25 2023
+# Process ID: 23440
+# Current directory: C:/PRACTICAS SED/trabajo_def2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent22884 C:\PRACTICAS SED\trabajo_def2\trabajo_def.xpr
+# Log file: C:/PRACTICAS SED/trabajo_def2/vivado.log
+# Journal file: C:/PRACTICAS SED/trabajo_def2\vivado.jou
+# Running On: Alvaro, OS: Windows, CPU Frequency: 2803 MHz, CPU Physical cores: 4, Host memory: 16859 MB
+#-----------------------------------------------------------
+start_gui
+open_project {C:/PRACTICAS SED/trabajo_def2/trabajo_def.xpr}
+update_compile_order -fileset sources_1
+synth_design -top TOP -part xc7a100tcsg324-1 -lint 
+synth_design -rtl -rtl_skip_mlo -name rtl_1
