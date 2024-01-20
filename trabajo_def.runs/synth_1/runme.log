@@ -1,0 +1,421 @@
+
+*** Running vivado
+    with args -log TOP.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source TOP.tcl
+
+
+ECHO est  desactivado.
+ECHO est  desactivado.
+
+****** Vivado v2023.1 (64-bit)
+  **** SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+  **** IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+  **** SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source TOP.tcl -notrace
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 462.445 ; gain = 200.934
+Command: read_checkpoint -auto_incremental -incremental {C:/PRACTICAS SED/trabajo_def2/trabajo_def.srcs/utils_1/imports/synth_1/TOP.dcp}
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/PRACTICAS SED/trabajo_def2/trabajo_def.srcs/utils_1/imports/synth_1/TOP.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top TOP -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 2008
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1293.789 ; gain = 411.367
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'TOP' [C:/PRACTICAS SED/trabajo_def2/trabajo_def.srcs/sources_1/new/TOP.vhd:19]
+INFO: [Synth 8-3491] module 'Entradas' declared at 'C:/PRACTICAS SED/trabajo_def2/trabajo_def.srcs/sources_1/new/Entradas.vhd:5' bound to instance 'GestorEntradas1' of component 'Entradas' [C:/PRACTICAS SED/trabajo_def2/trabajo_def.srcs/sources_1/new/TOP.vhd:207]
+INFO: [Synth 8-638] synthesizing module 'Entradas' [C:/PRACTICAS SED/trabajo_def2/trabajo_def.srcs/sources_1/new/Entradas.vhd:21]
+INFO: [Synth 8-3491] module 'SINCRONIZADOR' declared at 'C:/PRACTICAS SED/trabajo_def2/trabajo_def.srcs/sources_1/new/SINCRONIZADOR.vhd:4' bound to instance 'Sincronizador1' of component 'SINCRONIZADOR' [C:/PRACTICAS SED/trabajo_def2/trabajo_def.srcs/sources_1/new/Entradas.vhd:48]
+INFO: [Synth 8-638] synthesizing module 'SINCRONIZADOR' [C:/PRACTICAS SED/trabajo_def2/trabajo_def.srcs/sources_1/new/SINCRONIZADOR.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'SINCRONIZADOR' (0#1) [C:/PRACTICAS SED/trabajo_def2/trabajo_def.srcs/sources_1/new/SINCRONIZADOR.vhd:12]
+INFO: [Synth 8-3491] module 'FLANCO' declared at 'C:/PRACTICAS SED/trabajo_def2/trabajo_def.srcs/sources_1/new/FLANCO.vhd:4' bound to instance 'DetectorFlanco' of component 'FLANCO' [C:/PRACTICAS SED/trabajo_def2/trabajo_def.srcs/sources_1/new/Entradas.vhd:55]
+INFO: [Synth 8-638] synthesizing module 'FLANCO' [C:/PRACTICAS SED/trabajo_def2/trabajo_def.srcs/sources_1/new/FLANCO.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'FLANCO' (0#1) [C:/PRACTICAS SED/trabajo_def2/trabajo_def.srcs/sources_1/new/FLANCO.vhd:12]
+INFO: [Synth 8-3491] module 'SINCRONIZADOR' declared at 'C:/PRACTICAS SED/trabajo_def2/trabajo_def.srcs/sources_1/new/SINCRONIZADOR.vhd:4' bound to instance 'Sincronizador2' of component 'SINCRONIZADOR' [C:/PRACTICAS SED/trabajo_def2/trabajo_def.srcs/sources_1/new/Entradas.vhd:62]
+INFO: [Synth 8-3491] module 'FLANCO' declared at 'C:/PRACTICAS SED/trabajo_def2/trabajo_def.srcs/sources_1/new/FLANCO.vhd:4' bound to instance 'DetectorFlanco2' of component 'FLANCO' [C:/PRACTICAS SED/trabajo_def2/trabajo_def.srcs/sources_1/new/Entradas.vhd:69]
+INFO: [Synth 8-3491] module 'SINCRONIZADOR' declared at 'C:/PRACTICAS SED/trabajo_def2/trabajo_def.srcs/sources_1/new/SINCRONIZADOR.vhd:4' bound to instance 'Sincronizador3' of component 'SINCRONIZADOR' [C:/PRACTICAS SED/trabajo_def2/trabajo_def.srcs/sources_1/new/Entradas.vhd:76]
+INFO: [Synth 8-3491] module 'FLANCO' declared at 'C:/PRACTICAS SED/trabajo_def2/trabajo_def.srcs/sources_1/new/FLANCO.vhd:4' bound to instance 'DetectorFlanco3' of component 'FLANCO' [C:/PRACTICAS SED/trabajo_def2/trabajo_def.srcs/sources_1/new/Entradas.vhd:83]
+INFO: [Synth 8-3491] module 'SINCRONIZADOR' declared at 'C:/PRACTICAS SED/trabajo_def2/trabajo_def.srcs/sources_1/new/SINCRONIZADOR.vhd:4' bound to instance 'Sincronizador4' of component 'SINCRONIZADOR' [C:/PRACTICAS SED/trabajo_def2/trabajo_def.srcs/sources_1/new/Entradas.vhd:90]
+INFO: [Synth 8-3491] module 'FLANCO' declared at 'C:/PRACTICAS SED/trabajo_def2/trabajo_def.srcs/sources_1/new/FLANCO.vhd:4' bound to instance 'DetectorFlanco4' of component 'FLANCO' [C:/PRACTICAS SED/trabajo_def2/trabajo_def.srcs/sources_1/new/Entradas.vhd:97]
+INFO: [Synth 8-3491] module 'SINCRONIZADOR' declared at 'C:/PRACTICAS SED/trabajo_def2/trabajo_def.srcs/sources_1/new/SINCRONIZADOR.vhd:4' bound to instance 'Sincronizador5' of component 'SINCRONIZADOR' [C:/PRACTICAS SED/trabajo_def2/trabajo_def.srcs/sources_1/new/Entradas.vhd:104]
+INFO: [Synth 8-3491] module 'FLANCO' declared at 'C:/PRACTICAS SED/trabajo_def2/trabajo_def.srcs/sources_1/new/FLANCO.vhd:4' bound to instance 'DetectorFlanco5' of component 'FLANCO' [C:/PRACTICAS SED/trabajo_def2/trabajo_def.srcs/sources_1/new/Entradas.vhd:111]
+INFO: [Synth 8-256] done synthesizing module 'Entradas' (0#1) [C:/PRACTICAS SED/trabajo_def2/trabajo_def.srcs/sources_1/new/Entradas.vhd:21]
+INFO: [Synth 8-3491] module 'MaquinaEstados' declared at 'C:/PRACTICAS SED/trabajo_def2/trabajo_def.srcs/sources_1/new/MaquinaEstados.vhd:4' bound to instance 'MaquinaEstados1' of component 'MaquinaEstados' [C:/PRACTICAS SED/trabajo_def2/trabajo_def.srcs/sources_1/new/TOP.vhd:221]
+INFO: [Synth 8-638] synthesizing module 'MaquinaEstados' [C:/PRACTICAS SED/trabajo_def2/trabajo_def.srcs/sources_1/new/MaquinaEstados.vhd:25]
+INFO: [Synth 8-3491] module 'clk10kHz' declared at 'C:/PRACTICAS SED/trabajo_def2/trabajo_def.srcs/sources_1/new/clk10khz.vhd:4' bound to instance 'Inst_clk10khz' of component 'clk10khz' [C:/PRACTICAS SED/trabajo_def2/trabajo_def.srcs/sources_1/new/MaquinaEstados.vhd:37]
+INFO: [Synth 8-638] synthesizing module 'clk10kHz' [C:/PRACTICAS SED/trabajo_def2/trabajo_def.srcs/sources_1/new/clk10khz.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'clk10kHz' (0#1) [C:/PRACTICAS SED/trabajo_def2/trabajo_def.srcs/sources_1/new/clk10khz.vhd:11]
+INFO: [Synth 8-226] default block is never used [C:/PRACTICAS SED/trabajo_def2/trabajo_def.srcs/sources_1/new/MaquinaEstados.vhd:54]
+INFO: [Synth 8-256] done synthesizing module 'MaquinaEstados' (0#1) [C:/PRACTICAS SED/trabajo_def2/trabajo_def.srcs/sources_1/new/MaquinaEstados.vhd:25]
+INFO: [Synth 8-3491] module 'Contador' declared at 'C:/PRACTICAS SED/trabajo_def2/trabajo_def.srcs/sources_1/new/Contador.vhd:6' bound to instance 'Crono1' of component 'Contador' [C:/PRACTICAS SED/trabajo_def2/trabajo_def.srcs/sources_1/new/TOP.vhd:240]
+INFO: [Synth 8-638] synthesizing module 'Contador' [C:/PRACTICAS SED/trabajo_def2/trabajo_def.srcs/sources_1/new/Contador.vhd:27]
+INFO: [Synth 8-3491] module 'clk1Hz' declared at 'C:/PRACTICAS SED/trabajo_def2/trabajo_def.srcs/sources_1/new/clk1hz.vhd:4' bound to instance 'Inst_clk1hz' of component 'clk1hz' [C:/PRACTICAS SED/trabajo_def2/trabajo_def.srcs/sources_1/new/Contador.vhd:41]
+INFO: [Synth 8-638] synthesizing module 'clk1Hz' [C:/PRACTICAS SED/trabajo_def2/trabajo_def.srcs/sources_1/new/clk1hz.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'clk1Hz' (0#1) [C:/PRACTICAS SED/trabajo_def2/trabajo_def.srcs/sources_1/new/clk1hz.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'Contador' (0#1) [C:/PRACTICAS SED/trabajo_def2/trabajo_def.srcs/sources_1/new/Contador.vhd:27]
+INFO: [Synth 8-3491] module 'Inverso' declared at 'C:/PRACTICAS SED/trabajo_def2/trabajo_def.srcs/sources_1/new/Inverso.vhd:5' bound to instance 'Inverso1' of component 'Inverso' [C:/PRACTICAS SED/trabajo_def2/trabajo_def.srcs/sources_1/new/TOP.vhd:256]
+INFO: [Synth 8-638] synthesizing module 'Inverso' [C:/PRACTICAS SED/trabajo_def2/trabajo_def.srcs/sources_1/new/Inverso.vhd:26]
+INFO: [Synth 8-3491] module 'clk1Hz' declared at 'C:/PRACTICAS SED/trabajo_def2/trabajo_def.srcs/sources_1/new/clk1hz.vhd:4' bound to instance 'Inst_clk1hz' of component 'clk1hz' [C:/PRACTICAS SED/trabajo_def2/trabajo_def.srcs/sources_1/new/Inverso.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'Inverso' (0#1) [C:/PRACTICAS SED/trabajo_def2/trabajo_def.srcs/sources_1/new/Inverso.vhd:26]
+INFO: [Synth 8-3491] module 'Demux' declared at 'C:/PRACTICAS SED/trabajo_def2/trabajo_def.srcs/sources_1/new/Demux.vhd:3' bound to instance 'DeMux1' of component 'Demux' [C:/PRACTICAS SED/trabajo_def2/trabajo_def.srcs/sources_1/new/TOP.vhd:272]
+INFO: [Synth 8-638] synthesizing module 'Demux' [C:/PRACTICAS SED/trabajo_def2/trabajo_def.srcs/sources_1/new/Demux.vhd:46]
+WARNING: [Synth 8-614] signal 'Display1_C' is read in the process but is not in the sensitivity list [C:/PRACTICAS SED/trabajo_def2/trabajo_def.srcs/sources_1/new/Demux.vhd:49]
+WARNING: [Synth 8-614] signal 'Display2_C' is read in the process but is not in the sensitivity list [C:/PRACTICAS SED/trabajo_def2/trabajo_def.srcs/sources_1/new/Demux.vhd:49]
+WARNING: [Synth 8-614] signal 'Display3_C' is read in the process but is not in the sensitivity list [C:/PRACTICAS SED/trabajo_def2/trabajo_def.srcs/sources_1/new/Demux.vhd:49]
+WARNING: [Synth 8-614] signal 'Display4_C' is read in the process but is not in the sensitivity list [C:/PRACTICAS SED/trabajo_def2/trabajo_def.srcs/sources_1/new/Demux.vhd:49]
+WARNING: [Synth 8-614] signal 'Display5_C' is read in the process but is not in the sensitivity list [C:/PRACTICAS SED/trabajo_def2/trabajo_def.srcs/sources_1/new/Demux.vhd:49]
+WARNING: [Synth 8-614] signal 'Display6_C' is read in the process but is not in the sensitivity list [C:/PRACTICAS SED/trabajo_def2/trabajo_def.srcs/sources_1/new/Demux.vhd:49]
+WARNING: [Synth 8-614] signal 'Display7_C' is read in the process but is not in the sensitivity list [C:/PRACTICAS SED/trabajo_def2/trabajo_def.srcs/sources_1/new/Demux.vhd:49]
+WARNING: [Synth 8-614] signal 'Display8_C' is read in the process but is not in the sensitivity list [C:/PRACTICAS SED/trabajo_def2/trabajo_def.srcs/sources_1/new/Demux.vhd:49]
+WARNING: [Synth 8-614] signal 'Display1_T' is read in the process but is not in the sensitivity list [C:/PRACTICAS SED/trabajo_def2/trabajo_def.srcs/sources_1/new/Demux.vhd:49]
+WARNING: [Synth 8-614] signal 'Display2_T' is read in the process but is not in the sensitivity list [C:/PRACTICAS SED/trabajo_def2/trabajo_def.srcs/sources_1/new/Demux.vhd:49]
+WARNING: [Synth 8-614] signal 'Display3_T' is read in the process but is not in the sensitivity list [C:/PRACTICAS SED/trabajo_def2/trabajo_def.srcs/sources_1/new/Demux.vhd:49]
+WARNING: [Synth 8-614] signal 'Display4_T' is read in the process but is not in the sensitivity list [C:/PRACTICAS SED/trabajo_def2/trabajo_def.srcs/sources_1/new/Demux.vhd:49]
+WARNING: [Synth 8-614] signal 'Display5_T' is read in the process but is not in the sensitivity list [C:/PRACTICAS SED/trabajo_def2/trabajo_def.srcs/sources_1/new/Demux.vhd:49]
+WARNING: [Synth 8-614] signal 'Display6_T' is read in the process but is not in the sensitivity list [C:/PRACTICAS SED/trabajo_def2/trabajo_def.srcs/sources_1/new/Demux.vhd:49]
+WARNING: [Synth 8-614] signal 'Display7_T' is read in the process but is not in the sensitivity list [C:/PRACTICAS SED/trabajo_def2/trabajo_def.srcs/sources_1/new/Demux.vhd:49]
+WARNING: [Synth 8-614] signal 'Display8_T' is read in the process but is not in the sensitivity list [C:/PRACTICAS SED/trabajo_def2/trabajo_def.srcs/sources_1/new/Demux.vhd:49]
+WARNING: [Synth 8-614] signal 'Display1_ME' is read in the process but is not in the sensitivity list [C:/PRACTICAS SED/trabajo_def2/trabajo_def.srcs/sources_1/new/Demux.vhd:49]
+WARNING: [Synth 8-614] signal 'Display2_ME' is read in the process but is not in the sensitivity list [C:/PRACTICAS SED/trabajo_def2/trabajo_def.srcs/sources_1/new/Demux.vhd:49]
+WARNING: [Synth 8-614] signal 'Display3_ME' is read in the process but is not in the sensitivity list [C:/PRACTICAS SED/trabajo_def2/trabajo_def.srcs/sources_1/new/Demux.vhd:49]
+WARNING: [Synth 8-614] signal 'Display4_ME' is read in the process but is not in the sensitivity list [C:/PRACTICAS SED/trabajo_def2/trabajo_def.srcs/sources_1/new/Demux.vhd:49]
+WARNING: [Synth 8-614] signal 'Display5_ME' is read in the process but is not in the sensitivity list [C:/PRACTICAS SED/trabajo_def2/trabajo_def.srcs/sources_1/new/Demux.vhd:49]
+WARNING: [Synth 8-614] signal 'Display6_ME' is read in the process but is not in the sensitivity list [C:/PRACTICAS SED/trabajo_def2/trabajo_def.srcs/sources_1/new/Demux.vhd:49]
+WARNING: [Synth 8-614] signal 'Display7_ME' is read in the process but is not in the sensitivity list [C:/PRACTICAS SED/trabajo_def2/trabajo_def.srcs/sources_1/new/Demux.vhd:49]
+WARNING: [Synth 8-614] signal 'Display8_ME' is read in the process but is not in the sensitivity list [C:/PRACTICAS SED/trabajo_def2/trabajo_def.srcs/sources_1/new/Demux.vhd:49]
+INFO: [Synth 8-256] done synthesizing module 'Demux' (0#1) [C:/PRACTICAS SED/trabajo_def2/trabajo_def.srcs/sources_1/new/Demux.vhd:46]
+INFO: [Synth 8-3491] module 'Displays' declared at 'C:/PRACTICAS SED/trabajo_def2/trabajo_def.srcs/sources_1/new/Displays.vhd:5' bound to instance 'Dispalys1' of component 'Displays' [C:/PRACTICAS SED/trabajo_def2/trabajo_def.srcs/sources_1/new/TOP.vhd:316]
+INFO: [Synth 8-638] synthesizing module 'Displays' [C:/PRACTICAS SED/trabajo_def2/trabajo_def.srcs/sources_1/new/Displays.vhd:24]
+INFO: [Synth 8-3491] module 'clk10kHz' declared at 'C:/PRACTICAS SED/trabajo_def2/trabajo_def.srcs/sources_1/new/clk10khz.vhd:4' bound to instance 'Inst_clk10khz' of component 'clk10khz' [C:/PRACTICAS SED/trabajo_def2/trabajo_def.srcs/sources_1/new/Displays.vhd:56]
+INFO: [Synth 8-3491] module 'deco' declared at 'C:/PRACTICAS SED/trabajo_def2/trabajo_def.srcs/sources_1/new/deco.vhd:6' bound to instance 'Inst_deco1' of component 'deco' [C:/PRACTICAS SED/trabajo_def2/trabajo_def.srcs/sources_1/new/Displays.vhd:62]
+INFO: [Synth 8-638] synthesizing module 'deco' [C:/PRACTICAS SED/trabajo_def2/trabajo_def.srcs/sources_1/new/deco.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'deco' (0#1) [C:/PRACTICAS SED/trabajo_def2/trabajo_def.srcs/sources_1/new/deco.vhd:13]
+INFO: [Synth 8-3491] module 'deco' declared at 'C:/PRACTICAS SED/trabajo_def2/trabajo_def.srcs/sources_1/new/deco.vhd:6' bound to instance 'Inst_deco2' of component 'deco' [C:/PRACTICAS SED/trabajo_def2/trabajo_def.srcs/sources_1/new/Displays.vhd:66]
+INFO: [Synth 8-3491] module 'deco' declared at 'C:/PRACTICAS SED/trabajo_def2/trabajo_def.srcs/sources_1/new/deco.vhd:6' bound to instance 'Inst_deco3' of component 'deco' [C:/PRACTICAS SED/trabajo_def2/trabajo_def.srcs/sources_1/new/Displays.vhd:70]
+INFO: [Synth 8-3491] module 'deco' declared at 'C:/PRACTICAS SED/trabajo_def2/trabajo_def.srcs/sources_1/new/deco.vhd:6' bound to instance 'Inst_deco4' of component 'deco' [C:/PRACTICAS SED/trabajo_def2/trabajo_def.srcs/sources_1/new/Displays.vhd:74]
+INFO: [Synth 8-3491] module 'deco' declared at 'C:/PRACTICAS SED/trabajo_def2/trabajo_def.srcs/sources_1/new/deco.vhd:6' bound to instance 'Inst_deco5' of component 'deco' [C:/PRACTICAS SED/trabajo_def2/trabajo_def.srcs/sources_1/new/Displays.vhd:78]
+INFO: [Synth 8-3491] module 'deco' declared at 'C:/PRACTICAS SED/trabajo_def2/trabajo_def.srcs/sources_1/new/deco.vhd:6' bound to instance 'Inst_deco6' of component 'deco' [C:/PRACTICAS SED/trabajo_def2/trabajo_def.srcs/sources_1/new/Displays.vhd:82]
+INFO: [Synth 8-3491] module 'deco' declared at 'C:/PRACTICAS SED/trabajo_def2/trabajo_def.srcs/sources_1/new/deco.vhd:6' bound to instance 'Inst_deco7' of component 'deco' [C:/PRACTICAS SED/trabajo_def2/trabajo_def.srcs/sources_1/new/Displays.vhd:86]
+INFO: [Synth 8-3491] module 'deco' declared at 'C:/PRACTICAS SED/trabajo_def2/trabajo_def.srcs/sources_1/new/deco.vhd:6' bound to instance 'Inst_deco8' of component 'deco' [C:/PRACTICAS SED/trabajo_def2/trabajo_def.srcs/sources_1/new/Displays.vhd:90]
+INFO: [Synth 8-256] done synthesizing module 'Displays' (0#1) [C:/PRACTICAS SED/trabajo_def2/trabajo_def.srcs/sources_1/new/Displays.vhd:24]
+INFO: [Synth 8-256] done synthesizing module 'TOP' (0#1) [C:/PRACTICAS SED/trabajo_def2/trabajo_def.srcs/sources_1/new/TOP.vhd:19]
+WARNING: [Synth 8-3848] Net led in module/entity TOP does not have driver. [C:/PRACTICAS SED/trabajo_def2/trabajo_def.srcs/sources_1/new/TOP.vhd:15]
+WARNING: [Synth 8-7129] Port led in module TOP is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1389.164 ; gain = 506.742
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1389.164 ; gain = 506.742
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1389.164 ; gain = 506.742
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1389.164 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/PRACTICAS SED/trabajo_def2/trabajo_def.srcs/constrs_1/imports/PRACTICAS SED/Nexys-4-DDR-Master.xdc]
+Finished Parsing XDC File [C:/PRACTICAS SED/trabajo_def2/trabajo_def.srcs/constrs_1/imports/PRACTICAS SED/Nexys-4-DDR-Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/PRACTICAS SED/trabajo_def2/trabajo_def.srcs/constrs_1/imports/PRACTICAS SED/Nexys-4-DDR-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/TOP_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/TOP_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1441.316 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1441.316 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1441.316 ; gain = 558.895
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1441.316 ; gain = 558.895
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1441.316 ; gain = 558.895
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'actual_state_reg' in module 'MaquinaEstados'
+INFO: [Synth 8-802] inferred FSM for state register 'flag_reg' in module 'Displays'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+             crono_selec |                               00 |                               00
+             tempo_selec |                               01 |                               01
+              tempo_func |                               10 |                               11
+              crono_func |                               11 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'actual_state_reg' using encoding 'sequential' in module 'MaquinaEstados'
+WARNING: [Synth 8-327] inferring latch for variable 'display1_reg' [C:/PRACTICAS SED/trabajo_def2/trabajo_def.srcs/sources_1/new/MaquinaEstados.vhd:83]
+WARNING: [Synth 8-327] inferring latch for variable 'display5_reg' [C:/PRACTICAS SED/trabajo_def2/trabajo_def.srcs/sources_1/new/MaquinaEstados.vhd:87]
+WARNING: [Synth 8-327] inferring latch for variable 'display8_reg' [C:/PRACTICAS SED/trabajo_def2/trabajo_def.srcs/sources_1/new/MaquinaEstados.vhd:90]
+WARNING: [Synth 8-327] inferring latch for variable 'Start_i_reg' [C:/PRACTICAS SED/trabajo_def2/trabajo_def.srcs/sources_1/new/Contador.vhd:50]
+WARNING: [Synth 8-327] inferring latch for variable 'Reset_i_reg' [C:/PRACTICAS SED/trabajo_def2/trabajo_def.srcs/sources_1/new/Contador.vhd:51]
+WARNING: [Synth 8-327] inferring latch for variable 'display7_reg' [C:/PRACTICAS SED/trabajo_def2/trabajo_def.srcs/sources_1/new/Contador.vhd:107]
+WARNING: [Synth 8-327] inferring latch for variable 'display8_reg' [C:/PRACTICAS SED/trabajo_def2/trabajo_def.srcs/sources_1/new/Contador.vhd:106]
+WARNING: [Synth 8-327] inferring latch for variable 'Reset_i_reg' [C:/PRACTICAS SED/trabajo_def2/trabajo_def.srcs/sources_1/new/Inverso.vhd:50]
+WARNING: [Synth 8-327] inferring latch for variable 'Start_i_reg' [C:/PRACTICAS SED/trabajo_def2/trabajo_def.srcs/sources_1/new/Inverso.vhd:49]
+WARNING: [Synth 8-327] inferring latch for variable 'display7_reg' [C:/PRACTICAS SED/trabajo_def2/trabajo_def.srcs/sources_1/new/Inverso.vhd:106]
+WARNING: [Synth 8-327] inferring latch for variable 'display8_reg' [C:/PRACTICAS SED/trabajo_def2/trabajo_def.srcs/sources_1/new/Inverso.vhd:105]
+WARNING: [Synth 8-327] inferring latch for variable 'Display1_reg' [C:/PRACTICAS SED/trabajo_def2/trabajo_def.srcs/sources_1/new/Demux.vhd:52]
+WARNING: [Synth 8-327] inferring latch for variable 'Display2_reg' [C:/PRACTICAS SED/trabajo_def2/trabajo_def.srcs/sources_1/new/Demux.vhd:53]
+WARNING: [Synth 8-327] inferring latch for variable 'Display3_reg' [C:/PRACTICAS SED/trabajo_def2/trabajo_def.srcs/sources_1/new/Demux.vhd:54]
+WARNING: [Synth 8-327] inferring latch for variable 'Display4_reg' [C:/PRACTICAS SED/trabajo_def2/trabajo_def.srcs/sources_1/new/Demux.vhd:55]
+WARNING: [Synth 8-327] inferring latch for variable 'Display5_reg' [C:/PRACTICAS SED/trabajo_def2/trabajo_def.srcs/sources_1/new/Demux.vhd:56]
+WARNING: [Synth 8-327] inferring latch for variable 'Display6_reg' [C:/PRACTICAS SED/trabajo_def2/trabajo_def.srcs/sources_1/new/Demux.vhd:57]
+WARNING: [Synth 8-327] inferring latch for variable 'Display7_reg' [C:/PRACTICAS SED/trabajo_def2/trabajo_def.srcs/sources_1/new/Demux.vhd:58]
+WARNING: [Synth 8-327] inferring latch for variable 'Display8_reg' [C:/PRACTICAS SED/trabajo_def2/trabajo_def.srcs/sources_1/new/Demux.vhd:59]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              000 | 00000000000000000000000000000001
+*
+                 iSTATE6 |                              001 | 00000000000000000000000000000010
+                 iSTATE5 |                              010 | 00000000000000000000000000000011
+                 iSTATE4 |                              011 | 00000000000000000000000000000100
+                 iSTATE3 |                              100 | 00000000000000000000000000000101
+                 iSTATE2 |                              101 | 00000000000000000000000000000110
+                 iSTATE1 |                              110 | 00000000000000000000000000000111
+                 iSTATE0 |                              111 | 00000000000000000000000000001000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'flag_reg' using encoding 'sequential' in module 'Displays'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1441.316 ; gain = 558.895
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   26 Bit       Adders := 2     
+	   2 Input   13 Bit       Adders := 2     
+	   2 Input    4 Bit       Adders := 12    
++---Registers : 
+	               26 Bit    Registers := 2     
+	               13 Bit    Registers := 2     
+	                8 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 8     
+	                3 Bit    Registers := 5     
+	                2 Bit    Registers := 5     
+	                1 Bit    Registers := 9     
++---Muxes : 
+	   8 Input    8 Bit        Muxes := 1     
+	   8 Input    7 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 24    
+	   8 Input    3 Bit        Muxes := 1     
+	   4 Input    2 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 3     
+	   2 Input    1 Bit        Muxes := 15    
+	   4 Input    1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port led in module TOP is either unconnected or has no load
+WARNING: [Synth 8-3332] Sequential element (Crono1/display7_reg[1]) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (Inverso1/display7_reg[1]) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (Crono1/display7_reg[3]) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (Inverso1/display7_reg[3]) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (MaquinaEstados1/display5_reg[3]) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (MaquinaEstados1/display1_reg[3]) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (DeMux1/Display5_reg[3]) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (DeMux1/Display5_reg[0]) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (DeMux1/Display1_reg[3]) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (DeMux1/Display1_reg[2]) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (DeMux1/Display1_reg[1]) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (DeMux1/Display1_reg[0]) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (DeMux1/Display2_reg[3]) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (DeMux1/Display2_reg[2]) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (DeMux1/Display2_reg[1]) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (DeMux1/Display2_reg[0]) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (DeMux1/Display3_reg[3]) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (DeMux1/Display3_reg[2]) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (DeMux1/Display3_reg[1]) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (DeMux1/Display3_reg[0]) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (DeMux1/Display4_reg[3]) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (DeMux1/Display4_reg[2]) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (DeMux1/Display4_reg[1]) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (DeMux1/Display4_reg[0]) is unused and will be removed from module TOP.
+WARNING: [Synth 8-3332] Sequential element (DeMux1/Display8_reg[0]) is unused and will be removed from module TOP.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 1441.316 ; gain = 558.895
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1441.316 ; gain = 558.895
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1441.316 ; gain = 558.895
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1441.316 ; gain = 558.895
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1441.316 ; gain = 558.895
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1441.316 ; gain = 558.895
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1441.316 ; gain = 558.895
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1441.316 ; gain = 558.895
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1441.316 ; gain = 558.895
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1441.316 ; gain = 558.895
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+---------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                                    | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+---------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|TOP         | GestorEntradas1/DetectorFlanco/sreg_reg[0]  | 4      | 1     | NO           | YES                | YES               | 1      | 0       | 
+|TOP         | GestorEntradas1/DetectorFlanco2/sreg_reg[0] | 4      | 1     | NO           | YES                | YES               | 1      | 0       | 
+|TOP         | GestorEntradas1/DetectorFlanco3/sreg_reg[0] | 4      | 1     | NO           | YES                | YES               | 1      | 0       | 
+|TOP         | GestorEntradas1/DetectorFlanco5/sreg_reg[0] | 4      | 1     | NO           | YES                | YES               | 1      | 0       | 
++------------+---------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     2|
+|2     |CARRY4 |    17|
+|3     |LUT1   |    12|
+|4     |LUT2   |    12|
+|5     |LUT3   |     9|
+|6     |LUT4   |    44|
+|7     |LUT5   |     7|
+|8     |LUT6   |    38|
+|9     |MUXF7  |     4|
+|10    |SRL16E |     4|
+|11    |FDCE   |    26|
+|12    |FDPE   |     1|
+|13    |FDRE   |    94|
+|14    |FDSE   |    10|
+|15    |LD     |     1|
+|16    |LDC    |     2|
+|17    |LDP    |     2|
+|18    |IBUF   |     5|
+|19    |OBUF   |    15|
+|20    |OBUFT  |     1|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1441.316 ; gain = 558.895
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 46 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:20 . Memory (MB): peak = 1441.316 ; gain = 506.742
+Synthesis Optimization Complete : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1441.316 ; gain = 558.895
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1441.316 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 26 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 1 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1441.316 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 5 instances were transformed.
+  LD => LDCE (inverted pins: G): 1 instance 
+  LDC => LDCE: 2 instances
+  LDP => LDPE: 2 instances
+
+Synth Design complete | Checksum: e1e5ca4
+INFO: [Common 17-83] Releasing license: Synthesis
+78 Infos, 72 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 1441.316 ; gain = 954.004
+INFO: [Common 17-1381] The checkpoint 'C:/PRACTICAS SED/trabajo_def2/trabajo_def.runs/synth_1/TOP.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file TOP_utilization_synth.rpt -pb TOP_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Dec 22 11:16:23 2023...
