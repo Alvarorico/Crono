@@ -1,0 +1,90 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
+| Date         : Fri Dec 22 10:46:51 2023
+| Host         : Alvaro running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file TOP_control_sets_placed.rpt
+| Design       : TOP
+| Device       : xc7a100t
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    12 |
+|    Minimum number of control sets                        |    12 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    52 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    12 |
+| >= 0 to < 4        |     4 |
+| >= 4 to < 6        |     4 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     1 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     1 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     2 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              22 |           12 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              51 |           23 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |              11 |            5 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-------------------------------------------+--------------------+----------------------------------------------+------------------+----------------+--------------+
+|                Clock Signal               |    Enable Signal   |               Set/Reset Signal               | Slice Load Count | Bel Load Count | Bels / Slice |
++-------------------------------------------+--------------------+----------------------------------------------+------------------+----------------+--------------+
+|  Dispalys1/Inst_clk10khz/clk_10khz        |                    | Dispalys1/p_0_out[0]                         |                1 |              1 |         1.00 |
+|  GestorEntradas1/DetectorFlanco3/ZERO_aux |                    | GestorEntradas1/DetectorFlanco/sreg_reg[2]_0 |                1 |              1 |         1.00 |
+|  GestorEntradas1/DetectorFlanco2/STOP_aux |                    | GestorEntradas1/DetectorFlanco/sreg_reg[1]_0 |                1 |              1 |         1.00 |
+|  Inverso1/Inst_clk1hz/CLK                 | Inverso1/dec_sec0  | Inverso1/Reset_i                             |                1 |              3 |         3.00 |
+|  Dispalys1/Inst_clk10khz/clk_10khz        |                    | Dispalys1/refresh[7]_i_1_n_0                 |                4 |              4 |         1.00 |
+|  Inverso1/Inst_clk1hz/CLK                 | Inverso1/Start_i   | Inverso1/Reset_i                             |                2 |              4 |         2.00 |
+|  Inverso1/Inst_clk1hz/CLK                 | Inverso1/unit_min0 | Inverso1/Reset_i                             |                2 |              4 |         2.00 |
+|  Dispalys1/Inst_clk10khz/clk_10khz        |                    | Dispalys1/flag[2]                            |                4 |              5 |         1.25 |
+|  Dispalys1/Inst_clk10khz/clk_10khz        |                    |                                              |                3 |              8 |         2.67 |
+|  CLK_IBUF_BUFG                            |                    | Dispalys1/Inst_clk10khz/temporal             |                4 |             13 |         3.25 |
+|  CLK_IBUF_BUFG                            |                    |                                              |                9 |             17 |         1.89 |
+|  CLK_IBUF_BUFG                            |                    | Inverso1/Inst_clk1hz/temporal                |                8 |             26 |         3.25 |
++-------------------------------------------+--------------------+----------------------------------------------+------------------+----------------+--------------+
+
+
